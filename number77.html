@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>DOM задания</title>
+</head>
+<body>
+
+<h1 id="title">Привет!</h1>
+
+<p>Первый</p>
+<p>Второй</p>
+<p>Третий</p>
+
+<a id="link">Перейти</a>
+
+<p>Текст 1</p>
+<p>Текст 2</p>
+
+<img id="img" src="old.jpg">
+
+<script>
+
+// 1
+let el = document.getElementById("title");
+el.textContent = "Добро пожаловать!";
+
+// 2
+let arr = document.querySelectorAll("p");
+alert(arr.length);
+
+// 3
+let link = document.getElementById("link");
+link.setAttribute("href", "https://google.com");
+link.setAttribute("target", "_blank");
+
+// 4
+let firstP = document.querySelector("p");
+firstP.style.color = "red";
+firstP.style.fontSize = "20px";
+
+// 5
+let img = document.getElementById("img");
+img.src = "new.jpg";
+
+</script>
+
+</body>
+</html>
